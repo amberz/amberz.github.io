@@ -1,3 +1,8 @@
 theme: minima
 title: blog
 description: Amber's blog
+
+# minima theme settings
+minima:
+  # skin options: classic (default), dark, auto, solarized, solarized-dark
+  skin: dark
