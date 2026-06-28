@@ -1,0 +1,95 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// GitHub Pages uses minima 2.5.x, which ignores the `minima.skin: dark`
+// option. So we set minima's own color variables to dark values BEFORE
+// importing the theme. minima declares these with `!default`, so our
+// values take precedence.
+
+// ---- Black theme palette ----
+$background-color: #000000;
+$text-color:       #e6e6e6;
+$brand-color:      #5ab0ff;
+
+$grey-color:       #b3b3b3;
+$grey-color-light: #1a1a1a;
+$grey-color-dark:  #d0d0d0;
+
+// Pull in the minima theme (compiled with the variables above)
+@import "minima";
+
+// ---- Extra overrides for values minima hardcodes ----
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+// Links
+a {
+  &,
+  &:visited {
+    color: $brand-color;
+  }
+
+  &:hover {
+    color: lighten($brand-color, 15%);
+  }
+}
+
+// Code blocks & inline code (minima hardcodes light backgrounds)
+pre,
+code {
+  background-color: #111111;
+  border-color: #333;
+  color: #f2f2f2;
+}
+
+.highlight {
+  background: #111111;
+}
+
+// Header / footer
+.site-header {
+  background-color: #000000;
+  border-top-color: $brand-color;
+  border-bottom-color: #2a2a2a;
+}
+
+.site-title,
+.site-title:visited {
+  color: $text-color;
+}
+
+.site-nav .page-link {
+  color: $text-color;
+}
+
+.site-footer {
+  border-top-color: #2a2a2a;
+}
+
+// Tables
+table {
+  color: $text-color;
+  border-color: #333;
+
+  th {
+    background-color: #151515;
+    border-color: #333;
+  }
+
+  td {
+    border-color: #333;
+  }
+
+  tr:nth-child(even) {
+    background-color: #0c0c0c;
+  }
+}
+
+// Blockquotes
+blockquote {
+  color: $grey-color;
+  border-left-color: #333;
+}
