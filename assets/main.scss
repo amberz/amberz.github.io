@@ -1,0 +1,25 @@
+---
+# This (empty) front matter is REQUIRED. The two `---` lines tell Jekyll to
+# run this file through the SCSS compiler. Without them, no CSS is generated
+# and the page falls back to the theme's default (white) styles.
+---
+
+// Override minima's color variables BEFORE importing the theme.
+// These propagate to the header, footer, nav and borders automatically.
+$background-color: #000000; // page background (pure black)
+$text-color:       #e8e8e8; // body text
+$brand-color:      #6ea8fe; // links / accent (lightened for dark background)
+
+$grey-color:       #9a9a9a;
+$grey-color-light: #333333; // header/footer/code borders
+$grey-color-dark:  #cccccc;
+
+@import "minima";
+
+// minima hard-codes the code-block background to a light color (#eef),
+// so override it explicitly to keep things dark.
+pre,
+code {
+  background-color: #1a1a1a;
+  color: #f8f8f2;
+}
