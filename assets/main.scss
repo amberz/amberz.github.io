@@ -7,13 +7,13 @@
 // importing the theme. minima declares these with `!default`, so our
 // values take precedence.
 
-// ---- Black theme palette ----
-$background-color: #000000;
+// ---- Dark gray theme palette ----
+$background-color: #1e1e1e;
 $text-color:       #e6e6e6;
 $brand-color:      #5ab0ff;
 
 $grey-color:       #b3b3b3;
-$grey-color-light: #1a1a1a;
+$grey-color-light: #3a3a3a;
 $grey-color-dark:  #d0d0d0;
 
 // Pull in the minima theme (compiled with the variables above)
@@ -40,20 +40,20 @@ a {
 // Code blocks & inline code (minima hardcodes light backgrounds)
 pre,
 code {
-  background-color: #111111;
-  border-color: #333;
+  background-color: #2a2a2a;
+  border-color: #3a3a3a;
   color: #f2f2f2;
 }
 
 .highlight {
-  background: #111111;
+  background: #2a2a2a;
 }
 
 // Header / footer
 .site-header {
-  background-color: #000000;
+  background-color: #1e1e1e;
   border-top-color: $brand-color;
-  border-bottom-color: #2a2a2a;
+  border-bottom-color: #3a3a3a;
 }
 
 .site-title,
@@ -66,30 +66,30 @@ code {
 }
 
 .site-footer {
-  border-top-color: #2a2a2a;
+  border-top-color: #3a3a3a;
 }
 
 // Tables
 table {
   color: $text-color;
-  border-color: #333;
+  border-color: #3a3a3a;
 
   th {
-    background-color: #151515;
-    border-color: #333;
+    background-color: #2a2a2a;
+    border-color: #3a3a3a;
   }
 
   td {
-    border-color: #333;
+    border-color: #3a3a3a;
   }
 
   tr:nth-child(even) {
-    background-color: #0c0c0c;
+    background-color: #262626;
   }
 }
 
 // Blockquotes
 blockquote {
   color: $grey-color;
-  border-left-color: #333;
+  border-left-color: #3a3a3a;
 }
